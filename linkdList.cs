@@ -5,19 +5,19 @@ using System.Xml.Linq;
 
 namespace DSA_CRUD
 {
-    internal class linkdList
+    internal class linkdList<T> where T : IComparable
     {
-        private Node head;
-        public void add(int data)
+        private Node<T> head;
+        public void add(T data)
         {
-            Node node = new Node(data);
+            Node<T> node = new Node<T>(data);
             if (head == null)
             {
-                head = node;               
+                head = node;
             }
             else
             {
-                Node temp = head;
+                Node<T> temp = head;
                 while (temp.next != null)
                 {
                     temp = temp.next;
@@ -26,9 +26,9 @@ namespace DSA_CRUD
             }
 
         }
-        public void addRe(int data)
+        public void addRe(T data)
         {
-            Node node = new Node(data);
+            Node<T> node = new Node<T>(data);
             if (head == null)
             {
                 head = node;
@@ -48,7 +48,7 @@ namespace DSA_CRUD
             }
             else
             {
-                Node temp = head;
+                Node<T> temp = head;
                 string s = "";
                 while (temp != null)
                 {

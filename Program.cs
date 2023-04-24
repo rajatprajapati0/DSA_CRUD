@@ -7,16 +7,23 @@ namespace DSA_CRUD
     {
         static void Main(string[] args)
         {
-            linkdList linkdList = new linkdList();
+            linkdList<string> linkdList = new linkdList<string>();
+            linkdList<int> linkdList1 = new linkdList<int>();
 
-            Console.WriteLine("custom linkdList opretion");
-            linkdList.add(2);
-            linkdList.add(4);
-            linkdList.add(6);
-            linkdList.add(8);
+
+            Console.WriteLine("Hello World!");
+            linkdList.add("r");
+            linkdList.add("a");
+            linkdList.add("j");
+            linkdList.add("a t");
             Console.WriteLine(linkdList.Display());
+            linkdList1.add(2);
+            linkdList1.add(4);
+            linkdList1.add(6);
+            linkdList1.add(8);
+            Console.WriteLine(linkdList1.Display());
 
-            
+
         }
     }
 }
