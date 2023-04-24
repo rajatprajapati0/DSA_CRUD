@@ -9,7 +9,7 @@ namespace DSA_CRUD
         {
             linkdList linkdList = new linkdList();
 
-            Console.WriteLine("linkdList CRUD opretion");
+            Console.WriteLine("custom linkdList opretion");
             linkdList.add(2);
             linkdList.add(4);
             linkdList.add(6);
